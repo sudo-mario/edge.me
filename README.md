@@ -1,4 +1,4 @@
-# EdgE.me
+# EdgE.me - v0.1
 EdgE.me it's like my own small portfolio. It's still in work because I'm lazy (don't hate me pls)..
 
 ### 📝 Project made in: HTML & CSS
