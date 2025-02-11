@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	transition: all .3s ease-in-out;
+}
+
+body {
+	background-color: black;
+	color: white;
+	font-family: "Inconsolata", serif;
+	text-align: center;
+	padding: 20px;
+}
+
+h1 {
+	margin-top: 6rem;
+	font-size: 60px;
+}
+
+a:hover {
+	filter: blur(0);
+	color: gray;
+	cursor: pointer;
+	font-weight: 700;
+}
+
+a {
+	filter: blur(1px);
+	text-decoration: none;
+	color: white;
+	display: block;
+	margin: 0.5rem;
+}
+
+::selection {
+	color: darkgray;
+}
+
+.copy {
+	filter: blur(0);
+	margin-top: 5rem;
+}
+
+.other {
+	margin-top: 5rem;
+}
+
+p {
+	margin-top: 3rem;
+	margin-bottom: 5rem;
+	display: inline-block;
+	font-size: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 3px solid white;
+	animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+@keyframes blink {
+	50% {
+		border-color: transparent;
+	}
+}
+
+.special {
+	padding: 7px;
+	border-radius: 5px;
+	background-color: #242324;
+}
+
+.mota {
+	margin-top: 4rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+	h1 {
+		font-size: 50px;
+		margin-top: 4rem;
+	}
+
+	p {
+		font-size: 18px;
+		margin-bottom: 4rem;
+	}
+
+	.mota a {
+		margin: 0.5rem;
+		font-size: 18px;
+	}
+
+	.socials,
+	.other {
+		font-size: 22px;
+	}
+
+	.copy {
+		margin-top: 3rem;
+	}
+}
+
+@media (max-width: 480px) {
+	h1 {
+		font-size: 40px;
+		margin-top: 2rem;
+	}
+
+	p {
+		font-size: 16px;
+		margin-bottom: 3rem;
+	}
+
+	.mota a {
+		font-size: 16px;
+		margin: 0.3rem;
+	}
+
+	.special {
+		font-size: 14px;
+	}
+
+	.mota {
+		margin-top: 2rem;
+	}
+
+	.socials,
+	.other {
+		font-size: 18px;
+	}
+}
