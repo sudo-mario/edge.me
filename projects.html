@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdgE.me - projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/project.css">
+</head>
+<body>
+    <a href="javascript:history.back()" class="back-link">
+        <div class="fa-solid fa-arrow-left"></div> Back
+    </a>
+    <h1>projects</h1>
+    
+    <div class="project-container">
+        <div class="project-card" onclick="openPopup()">
+            <h2><a href="#">Project 1</a></h2>
+        </div>
+    </div>
+
+    <!-- Popup -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup">
+            <img style="max-width: 35rem" src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <h3>Bio Page</h3>
+            <p>This is my bio page. Check it out on github.</p>
+            <button class="close-btn" onclick="closePopup()">Close</button>
+            <button class="open-btn" onclick="window.open('https://github.com/sudo-mario/mybio')">Open</button>
+        </div>
+    </div>
+
+    <script>
+        function openPopup() {
+            document.getElementById('popupOverlay').style.display = 'flex';
+        }
+
+        function closePopup() {
+            document.getElementById('popupOverlay').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
